@@ -1,0 +1,980 @@
+:root {
+    --page-width: 100vw;
+    --page-height: 100vh;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    margin: 0;
+    overflow: hidden;
+    background: #262626;
+
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+
+    font-size: 14px;
+
+    color: #000;
+    
+ 
+    
+  
+    
+
+
+    padding: 0;
+
+}
+
+
+.swiper-container {
+
+    width: 100%;
+
+    padding-top: 200px;
+
+    padding-bottom: 50px;
+    
+
+  }
+
+
+
+  .swiper-slide {
+
+    background-position: center;
+
+    background-size: cover;
+
+    width: 200px;
+
+    height: 350px;
+    background: #fff;
+
+
+
+  }
+.logo{
+    color: white;
+}
+.n{
+    position: fixed;
+    z-index: 999;
+    margin: 30px;
+}
+.mb{
+    position: fixed;
+   
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+
+
+}
+
+#insc{
+    color: white;
+}
+#githubc{
+    color: white;
+}
+#fabc{
+    color: white;
+}
+.ins{
+    position: fixed;
+    bottom: 450px;
+    right: 20px;
+    z-index: 999;
+    font-size: 15px;
+    padding: 5px 6px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: .5s;
+
+}
+.ins :hover{
+    color: #e4405f;
+    border: 1px solid #e4405f;
+    transition: .5s;
+    
+}
+.face{
+    position: fixed;
+    bottom: 400px;
+    right: 20px;
+    z-index: 999;
+    font-size: 15px;
+    padding: 5px 5px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: .5s;
+
+}
+.face :hover{
+    color: #3b5999;
+    border: 1px solid #3b5999;
+    transition: .5s;
+    
+}
+.github{
+    position: fixed;
+    bottom: 350px;
+    right: 20px;
+    z-index: 999;
+    font-size: 15px;
+    padding: 5px 5px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: .5s;
+
+}
+.github :hover{
+    color: #b6d40b;
+    border: 1px solid #b6d40b;
+    transition: .5s;
+    
+}
+.copyright{
+    position: fixed;
+    bottom: 20px;
+    z-index: 999;
+    width: 100vw;
+    text-align: center;
+    
+  
+}
+.myname{
+    position: fixed;
+    z-index: 999;
+   display: flex;
+   align-items: left;
+   justify-content: left;
+    
+
+    font-size: 5rem;
+    margin: 80px;
+  
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  font-family: Taki,sans-serif;
+
+   
+
+
+}
+
+.sCont {
+    position: fixed;
+    z-index: 999;
+    right: 150px;
+    bottom: 100px;
+    font-size: 1.25rem;
+}
+.sCont :hover{
+    color: greenyellow;
+    opacity: 60%;
+}
+.mb :hover{
+    color: greenyellow;
+    opacity: 60%;
+}
+.h{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+}
+.slide{
+    min-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.5rem;
+    color: white;
+    
+}
+#one{
+   
+    background-image: url(backgroundmain.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+.text1{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    position: relative;
+    animation: text 5s infinite;
+    display: block;
+}
+
+
+@keyframes text{
+    0%{
+        color: black;
+        margin-bottom: -40px;
+
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}
+
+@keyframes text{
+    0%{
+        color: black;
+        margin-bottom: -40px;
+
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}
+#two{
+    left: var(--page-width);
+    background-image: url(backgroundmain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+#three{
+    left: calc(var(--page-width) * 2);
+    background-image: url(backgroundmain2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.overlay{
+    position: fixed;
+    z-index: 999;
+    background-color: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    
+}
+nav ul{
+    list-style: none;
+    
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    margin: 1rem 0;
+    opacity: 0;
+  
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    opacity: 0.75;
+    transition: opacity 0.2s ease;
+}
+nav ul li a:hover{
+    opacity: 1;
+}
+@keyframes fadeInLeft{
+    0% { opacity: 0; transform: translatex(-25%);}
+    100% { opacity: 1; transform: translatex(0%);}
+}
+.overlay.visible{
+    height: 100%;
+    opacity: .85;
+    visibility: visible;
+
+}
+.overlay.visible nav ul li{
+    animation: fadeInLeft 0.3s ease forwards;
+
+}
+
+
+#portfolio1{
+    background-image: url(portfoliomain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 3rem;
+    
+  
+}
+.pwrd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#portfolio2{
+    left: var(--page-width);
+    background-color: orange;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    
+    
+    
+}
+
+
+
+#portfolio3{
+    left: calc(var(--page-width) * 2);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+#portfolio4{
+    left: calc(var(--page-width) * 3);
+    background-color: #008080;
+}
+#portfolio5{
+    left: calc(var(--page-width) * 4);
+    background-color: cornflowerblue;
+}
+.wps1{
+    color: goldenrod;
+}
+.wps2{
+    font-size: 1.25rem;
+}
+.wps3{
+    font-size: 1rem;
+    color: white;
+}
+.wps4{
+    font-size: 1.25rem;
+    color: goldenrod;
+}
+.wps5{
+    font-size: 1rem;
+    color: white;
+}
+.wps6{
+    font-size: 1.25rem;
+    color: goldenrod;
+}
+.wps7{
+    color: white;
+}
+.wps8{
+    color: white;
+}
+.ps2{
+    font-size: 1.25rem;
+
+}
+.ps4{
+    font-size: 1.25rem;
+
+}
+.ps6{
+    font-size: 1.25rem;
+
+}
+.pws1{
+    
+    color: goldenrod;
+
+}
+.pws2{
+    font-size: 1.25rem;
+    color: goldenrod;
+
+}
+.pws4{
+    font-size: 1.25rem;
+    color: goldenrod;
+
+}
+.pws6{
+    font-size: 1.25rem;
+    color: goldenrod;
+
+}
+.pws8{
+    font-size: 1.25rem;
+    color: goldenrod;
+
+}
+
+
+
+
+
+@media ( max-width: 550px){
+   
+    .h{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .mb{
+        position: fixed;
+        top: 20px;
+        left: 380px;
+    }
+    .myname{
+        font-size: 2rem;
+    }
+    .sCont{
+       position: fixed;
+       bottom: 135px;
+       font-size: 1rem;
+       right: 20px;
+
+    }
+    .slide{
+        font-size: 1rem;
+    }
+    #one{
+        background-image: url(backgroundmainmobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+  
+        
+    }
+    #portfolio1{
+        background-image: url(portfoliomain.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-size: 1rem;
+    }
+    #portfolio2{
+        flex-direction: column;
+    }
+    #vid1{
+        height: 150px;
+        width: 250px;
+        object-fit: cover;
+    }
+    #portfolio3{
+        flex-direction: column;
+    }
+    #wild{
+        height: 150px;
+        width: 250px;
+        object-fit: cover;
+    }
+    .wild1{
+        font-size: 1rem;
+    }
+    .ps{
+        font-size: 1rem;
+    }
+    #portfolio4{
+        flex-direction: column;
+    }
+    #personalweb{
+        height: 150px;
+        width: 250px;
+        object-fit: cover;
+    }
+    .text1{
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 4px;
+        margin-bottom: 10px;
+        position: relative;
+        animation: text 5s 1;
+        display: block;
+        color: white;
+    }
+    .copyright{
+        bottom: 70px;
+    }
+    
+    
+    
+ 
+
+
+ 
+
+ 
+        
+}
+@media  (width: 375px){
+   
+    .h{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .mb{
+        position: fixed;
+        top: 20px;
+        left: 350px;
+    }
+    .myname{
+        font-size: 2rem;
+    }
+    .sCont{
+       position: fixed;
+       bottom: 160px;
+       font-size: 1rem;
+       right: 20px;
+
+    }
+    .slide{
+        font-size: 1rem;
+    }
+    #one{
+        background-image: url(backgroundmainmobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+  
+        
+    }
+    #portfolio1{
+        background-image: url(portfoliomain.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-size: 1rem;
+    }
+    #portfolio2{
+        flex-direction: column;
+    }
+    #vid1{
+        height: 150px;
+        width: 250px;
+        object-fit: cover;
+    }
+    #portfolio3{
+        flex-direction: column;
+    }
+    #wild{
+        height: 150px;
+        width: 250px;
+        object-fit: cover;
+    }
+    .wild1{
+        font-size: 1rem;
+    }
+    .ps{
+        font-size: 1rem;
+    }
+    #portfolio4{
+        flex-direction: column;
+    }
+    #personalweb{
+        height: 150px;
+        width: 250px;
+        object-fit: cover;
+    }
+    .text1{
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 4px;
+        margin-bottom: 10px;
+        position: relative;
+        animation: text 5s 1;
+        display: block;
+        color: white;
+    }
+    .copyright{
+        bottom: 130px;
+    }
+    
+    
+    
+ 
+
+
+ 
+
+ 
+        
+}
+@media  (max-height: 667px){
+   
+    .h{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .mb{
+        position: fixed;
+        top: 20px;
+        left: 350px;
+    }
+    .myname{
+        font-size: 2rem;
+    }
+    .sCont{
+       position: fixed;
+       bottom: 100px;
+       font-size: 1rem;
+       right: 20px;
+
+    }
+    .slide{
+        font-size: 1rem;
+    }
+    #one{
+        background-image: url(backgroundmainmobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+  
+        
+    }
+    #portfolio1{
+        background-image: url(portfoliomain.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-size: 1rem;
+    }
+    #portfolio2{
+        flex-direction: column;
+    }
+    #vid1{
+        height: 150px;
+        width: 250px;
+        object-fit: cover;
+    }
+    #portfolio3{
+        flex-direction: column;
+    }
+    #wild{
+        height: 150px;
+        width: 250px;
+        object-fit: cover;
+    }
+    .wild1{
+        font-size: 1rem;
+    }
+    .ps{
+        font-size: 1rem;
+    }
+    #portfolio4{
+        flex-direction: column;
+    }
+    #personalweb{
+        height: 150px;
+        width: 250px;
+        object-fit: cover;
+    }
+    .text1{
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 4px;
+        margin-bottom: 10px;
+        position: relative;
+        animation: text 5s 1;
+        display: block;
+        color: white;
+    }
+    .copyright{
+        bottom: 50px;
+    }
+    
+    
+    
+ 
+
+
+ 
+
+ 
+        
+}
+@media  (max-height: 640px){
+   
+    .h{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .mb{
+        position: fixed;
+        top: 20px;
+        left: 330px;
+    }
+    .myname{
+        font-size: 2rem;
+    }
+    .sCont{
+       position: fixed;
+       bottom: 70px;
+       font-size: 1rem;
+       right: 20px;
+
+    }
+    .slide{
+        font-size: 1rem;
+    }
+    #one{
+        background-image: url(backgroundmainmobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+  
+        
+    }
+    #portfolio1{
+        background-image: url(portfoliomain.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-size: 1rem;
+    }
+    #portfolio2{
+        flex-direction: column;
+    }
+    #vid1{
+        height: 150px;
+        width: 250px;
+        object-fit: cover;
+    }
+    #portfolio3{
+        flex-direction: column;
+    }
+    #wild{
+        height: 150px;
+        width: 250px;
+        object-fit: cover;
+    }
+    .wild1{
+        font-size: 1rem;
+    }
+    .ps{
+        font-size: 1rem;
+    }
+    #portfolio4{
+        flex-direction: column;
+    }
+    #personalweb{
+        height: 150px;
+        width: 250px;
+        object-fit: cover;
+    }
+    .text1{
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 4px;
+        margin-bottom: 10px;
+        position: relative;
+        animation: text 5s 1;
+        display: block;
+        color: white;
+    }
+    .copyright{
+        bottom: 30px;
+    }
+    .face{
+        position: fixed;
+        bottom: 300px;
+        right: 20px;
+        z-index: 999;
+        font-size: 15px;
+        padding: 5px 5px;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        transition: .5s;
+    
+    }
+    .ins{
+        position: fixed;
+        bottom: 350px;
+        right: 20px;
+        z-index: 999;
+        font-size: 15px;
+        padding: 5px 5px;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        transition: .5s;
+    
+    }
+    .github{
+        position: fixed;
+        bottom: 250px;
+        right: 20px;
+        z-index: 999;
+        font-size: 15px;
+        padding: 5px 5px;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        transition: .5s;
+    
+    }
+    
+    
+    
+ 
+
+
+ 
+
+ 
+        
+}
+@media  (max-height: 600px){
+  
+    .h{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .mb{
+        position: fixed;
+        top: 20px;
+        left: 300px;
+    }
+    .myname{
+        font-size: 2rem;
+    }
+    .sCont{
+       position: fixed;
+       bottom: 70px;
+       font-size: 1rem;
+       right: 20px;
+
+    }
+    .slide{
+        font-size: 1rem;
+    }
+    #one{
+        background-image: url(backgroundmainmobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+  
+        
+    }
+    #portfolio1{
+        background-image: url(portfoliomain.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-size: 1rem;
+    }
+    #portfolio2{
+        flex-direction: column;
+    }
+    #vid1{
+        height: 150px;
+        width: 250px;
+        object-fit: cover;
+    }
+    #portfolio3{
+        flex-direction: column;
+    }
+    #wild{
+        height: 150px;
+        width: 250px;
+        object-fit: cover;
+    }
+    .wild1{
+        font-size: 1rem;
+    }
+    .ps{
+        font-size: 1rem;
+    }
+    #portfolio4{
+        flex-direction: column;
+    }
+    #personalweb{
+        height: 150px;
+        width: 250px;
+        object-fit: cover;
+    }
+    .text1{
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 4px;
+        margin-bottom: 10px;
+        position: relative;
+        animation: text 5s 1;
+        display: block;
+        color: white;
+    }
+    .copyright{
+        bottom: 30px;
+    }
+    .face{
+        position: fixed;
+        bottom: 300px;
+        right: 20px;
+        z-index: 999;
+        font-size: 15px;
+        padding: 5px 5px;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        transition: .5s;
+    
+    }
+    .ins{
+        position: fixed;
+        bottom: 350px;
+        right: 20px;
+        z-index: 999;
+        font-size: 15px;
+        padding: 5px 5px;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        transition: .5s;
+    
+    }
+    .github{
+        position: fixed;
+        bottom: 250px;
+        right: 20px;
+        z-index: 999;
+        font-size: 15px;
+        padding: 5px 5px;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        transition: .5s;
+    
+    }
+    
+    
+    
+ 
+
+
+ 
+
+ 
+        
+}
+
+
+
