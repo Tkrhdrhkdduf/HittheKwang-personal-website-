@@ -18,7 +18,7 @@ and the videos played when the image was pressed, all used my own JavaScript.
 
 저는 라이브러리 Jquery, Swiper.js, and Fontawsome을 사요했습니다
 폰트어썸을 통해 인스타그램, 깃헙 그리고 페이스북 이미지를 가지고 왔습니다.
-저는 swiper.js 을 통해 갤러리 페이지에서 이미지들을 넘기는 애니메이션을 활용했습니다.
+저는 swiper.css 와 swiper.js 을 통해 갤러리 페이지에서 이미지들을 넘기는 애니메이션을 활용했습니다.
 (<link rel="stylesheet" href="swiper.min.css">)
 ( <script type="text/javascript" src="swiper.min.js"></script>
 
